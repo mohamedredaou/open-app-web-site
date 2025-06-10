@@ -4,10 +4,12 @@ system/
 
 Programming/
 ├── Visual Studio Code (vsc)
-├── Flutter
 ├── GitHub
 ├── Git
 ├── Command Prompt (cmd.exe)
+├── app development/
+    ├── Flutter
+    └── android developer studio
 └── Game development/
     ├── godot
     └── Unreal Engine 5
@@ -27,6 +29,10 @@ design/
 ├── behance
 ├── sketchfab
 ├── free3d
+├── edit video & image
+    ├── blackmagicdesign
+    ├── 
+    └── 
 ├── design ui, ux/
     └── figma
 ├── graphic design/
@@ -92,9 +98,10 @@ games/
 chine/
 ├── rednote
 ├── bilibili
-├──manga/
+├── baidu
+├── manga/
     ├── مانجا للشباب
     └── مانجا للصغار
-└──anime/
+└── anime/
     ├── Anime Ray - انمي راي
     └── Crunchyroll
