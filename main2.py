@@ -1,5 +1,4 @@
 import webbrowser
-import webbrowser
 
 while True:
   quser = input("open type (system|Programming|design|drawing|internet|Freelance|games|chine) : ").lower()
@@ -260,7 +259,5 @@ while True:
 #        print("This app & web-site does not exist")
     else:
       print("This app & web-site does not exist")
-  else:
-    print("This type does not exist")
   else:
     print("This type does not exist")
