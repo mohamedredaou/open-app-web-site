@@ -9,7 +9,7 @@ Programming/
 ├── Command Prompt (cmd.exe)
 ├── app development/
     ├── Flutter
-    └── android developer studio
+    └── android developer studio (ads)
 └── Game development/
     ├── godot
     └── Unreal Engine 5
@@ -30,7 +30,7 @@ design/
 ├── sketchfab
 ├── free3d
 ├── edit video & image
-    ├── blackmagicdesign
+    ├── davinci resolve
     ├── 
     └── 
 ├── design ui, ux/
