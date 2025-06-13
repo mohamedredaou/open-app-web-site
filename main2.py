@@ -1,16 +1,35 @@
 import webbrowser
+import os
+import subprocess
 
 while True:
   quser = input("open type (system|programming|design|drawing|internet|freelance|games|chine) : ").lower()
-#  if quser == "system":
   if quser == "programming":
-    quser1 = input("open (Visual Studio Code (vsc)|github|git|command prompt (cmd.exe)|app development|game development) : ").lower()
-#    if quser1 == "Visual Studio Code (vsc)" or quser1 == "Visual Studio Code" or quser1 == "vsc":
-    if quser1 == "github":
-      webbrowser.open("https://github.com/mohamedredaou") 
+    quser1 = input("open (visual studio code (vsc)|github|git|command prompt (cmd.exe)|app development|game development) : ").lower()
+    if quser1 == "visual studio code (vsc)" or quser1 == "visual studio code" or quser1 == "vsc":
+      vsc_path = r"C:\Users\Réda\AppData\Local\Programs\Microsoft VS Code\Code.exe" 
+      try:
+        subprocess.Popen([vsc_path]) 
+        print("Visual Studio Code (VSC) has been opened successfully.")
+      except FileNotFoundError:
+        print(f"Error: Visual Studio Code file not found in specified path: {vsc_path}")
+        print("Please make sure the path is correct or that VS Code is installed..")
+      except Exception as e:
+        print(f"Error opening Visual Studio Code (VSC): {e}")
+    elif quser1 == "github":
+      webbrowser.open("https://github.com/mohamedredaou")
       print("Opening github...")
 #    elif quser1 == "git":
-#    elif quser1 == "command prompt (cmd.exe)" or quser1 == "command prompt" or quser1 == "cmd" or quser1 == "cmd.exe":
+    elif quser1 == "command prompt (cmd.exe)" or quser1 == "command prompt" or quser1 == "cmd" or quser1 == "cmd.exe":
+      cmd_path = r"C:\Windows\System32\cmd.exe" 
+      try:
+        subprocess.Popen([cmd_path]) 
+        print("has been opened successfully.(CMD)")
+      except FileNotFoundError:
+        print(f"Error: cmd file not found in specified path {cmd_path}")
+        print("Please make sure the path is correct or that cmd is installed..")
+      except Exception as e:
+        print(f"Error opening (cmd): {e}")
 #    elif quser1 == "app development":
 #      quser2 = input("open (flutter|android developer studio (ads)) : ").lower()
 #      if quser2 == "android developer studio (ads)" or quser1 == "android developer studio" or quser1 == "ads":
@@ -216,14 +235,37 @@ while True:
     else:
       print("This app & web-site does not exist")
   elif quser == "games":
-    queser14 = input("open (steam|asphalt legends - racing game|genshin impact|EA SPORTS FC™ Mobile Soccer|Dummynation|Forza Horizon 5|territorial io) : ").lower()
+    queser14 = input("open (steam|asphalt legends - racing game|genshin impact|EA SPORTS FC™ Mobile Soccer|Dummynation|Forza Horizon 5|web-site) : ").lower()
     if queser14 == "steam":
       webbrowser.open("https://store.steampowered.com/") 
       print("Opening steam...")
 #    elif queser14 == "asphalt legends - racing game":
-    elif queser14 == "territorial io":
-      webbrowser.open("https://territorial.io/")
-      print("Opening territorial io...")
+    elif queser14 == "web-site":
+      queser20 = input("open (territorial io|crazygames|oskarstalberg planet|oskarstalberg townscaper|slowroads) : ").lower()
+      if queser20 == "territorial io":
+        webbrowser.open("https://territorial.io/")
+        print("Opening territorial io...")
+      elif queser20 == "crazygames":
+        webbrowser.open("https://www.crazygames.com/") 
+        print("Opening crazy games...")
+      elif queser20 == "oskarstalberg planet": 
+        webbrowser.open("https://oskarstalberg.com/game/planet/planet.html")
+        print("Opening oskarstalberg planet...")
+      elif queser20 == "oskarstalberg townscaper":
+        webbrowser.open("https://oskarstalberg.com/Townscaper/#GSB0RARueC6Snc9E0lO5B")
+        print("Opening oskarstalberg townscaper...")
+      elif queser20 == "slowroads":
+        queser21 = input("open (race|free) : ").lower()
+        if queser21 == "free":
+          webbrowser.open("https://slowroads.io/")
+          print("Opening slowroads free...")
+        elif queser21 == "race":
+          webbrowser.open("https://driftmas.slowroads.io/")
+          print("Opening slowroads race...")
+        else:
+          print("This app & web-site does not exist")
+      else:
+        print("This app & web-site does not exist")
 #    elif queser14 == "genshin impact":
 #    elif queser14 == "eFootball":
 #    elif queser14 == "Dummynation":
