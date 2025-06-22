@@ -3,8 +3,10 @@ This is an app to unlock the websites and apps I use.
 - Open Sites
 - Open Apps
 - Easier access to apps and websites
-# Example
+  
+***Example***
 ***
+```bash
 Programming/
 ├── Visual Studio Code (vsc)
 ├── GitHub
@@ -116,4 +118,6 @@ chine/
     ├── Anime Ray - انمي راي
     └── Crunchyroll
     
+```
+
 ***
